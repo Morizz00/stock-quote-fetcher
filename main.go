@@ -29,7 +29,7 @@ type ErrorResponse struct {
 }
 
 func loadApiKey(configPath string) string {
-	data, err := os.ReadFile(configPath) // Changed from ioutil.ReadFile
+	data, err := os.ReadFile(configPath) 
 	if err != nil {
 		log.Fatalf("failed to read config file:%v", err)
 	}
